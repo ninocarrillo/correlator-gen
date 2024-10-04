@@ -75,8 +75,8 @@ with report_file:
 
 	report_file.write(f'\n\n# Correlator {correlator["frequency"]}Hz\n')
 	report_file.write('\n')
-	report_file.write(GenInt16ArrayC(f'Sin{int(correlator["frequency"])}-{int(correlator["sample rate"])}', correlator['SinTaps'] * correlator['amplitude'], 10))
-	report_file.write(GenInt16ArrayC(f'Cos{int(correlator["frequency"])}-{int(correlator["sample rate"])}', correlator['CosTaps'] * correlator['amplitude'], 10))
+	report_file.write(GenInt16ArrayC(f'Sin{int(correlator["frequency"])}_{int(correlator["sample rate"])}', correlator['SinTaps'] * correlator['amplitude'], 10))
+	report_file.write(GenInt16ArrayC(f'Cos{int(correlator["frequency"])}_{int(correlator["sample rate"])}', correlator['CosTaps'] * correlator['amplitude'], 10))
 	report_file.write('\n')
 	report_file.close()
 	print(f'wrote {dirname + report_file_name}')
