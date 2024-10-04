@@ -1,0 +1,9 @@
+# Command line: correlator-gen.py 7200 1600 32768 8 
+
+# Correlator 1600.0Hz
+
+
+const __prog__ int16_t __attribute__((space(prog))) Sin1600.0-7200.0[8] = {  \
+      0, 32270, 11207, -28378, -21063, 21063, 28378, -11207 };
+const __prog__ int16_t __attribute__((space(prog))) Cos1600.0-7200.0[8] = {  \
+      32768, 5690, -30792, -16384, 25102, 25102, -16384, -30792 };
